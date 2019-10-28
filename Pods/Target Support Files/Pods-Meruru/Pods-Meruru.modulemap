@@ -1,0 +1,6 @@
+framework module Pods_Meruru {
+  umbrella header "Pods-Meruru-umbrella.h"
+
+  export *
+  module * { export * }
+}

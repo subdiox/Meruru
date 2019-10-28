@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C010B6A23670D6500476E9F /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C010B6923670D6500476E9F /* TVViewController.swift */; };
+		4C01F62523670B9400F20063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01F62423670B9400F20063 /* AppDelegate.swift */; };
+		4C01F62923670B9500F20063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F62823670B9500F20063 /* Assets.xcassets */; };
+		4C01F63D23670C6A00F20063 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01F63A23670C6A00F20063 /* Extension.swift */; };
+		4C01F63E23670C6A00F20063 /* MirakurunAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01F63B23670C6A00F20063 /* MirakurunAPI.swift */; };
+		4C01F63F23670C6A00F20063 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01F63C23670C6A00F20063 /* AppConfig.swift */; };
+		4C01F64823670D3200F20063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C01F64623670D3200F20063 /* Main.storyboard */; };
+		8F4681AA2EE7EBD9BF6AE03F /* Pods_Meruru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9555B3B9836917367AFF74 /* Pods_Meruru.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C010B6923670D6500476E9F /* TVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
+		4C01F62123670B9400F20063 /* Meruru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meruru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C01F62423670B9400F20063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C01F62823670B9500F20063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C01F62D23670B9500F20063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C01F62E23670B9500F20063 /* Meruru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Meruru.entitlements; sourceTree = "<group>"; };
+		4C01F63A23670C6A00F20063 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4C01F63B23670C6A00F20063 /* MirakurunAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirakurunAPI.swift; sourceTree = "<group>"; };
+		4C01F63C23670C6A00F20063 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		4C01F64723670D3200F20063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60674800432DE85C135E9A4D /* Pods-Meruru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meruru.release.xcconfig"; path = "Target Support Files/Pods-Meruru/Pods-Meruru.release.xcconfig"; sourceTree = "<group>"; };
+		DF9555B3B9836917367AFF74 /* Pods_Meruru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meruru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E425E17C12A8AAFE4F202A /* Pods-Meruru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meruru.debug.xcconfig"; path = "Target Support Files/Pods-Meruru/Pods-Meruru.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C01F61E23670B9400F20063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4681AA2EE7EBD9BF6AE03F /* Pods_Meruru.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02AADB46889301552F4B70FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF9555B3B9836917367AFF74 /* Pods_Meruru.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C01F61823670B9400F20063 = {
+			isa = PBXGroup;
+			children = (
+				4C01F62323670B9400F20063 /* Meruru */,
+				4C01F62223670B9400F20063 /* Products */,
+				BB0EB0E32FCCAB71462000E6 /* Pods */,
+				02AADB46889301552F4B70FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C01F62223670B9400F20063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C01F62123670B9400F20063 /* Meruru.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C01F62323670B9400F20063 /* Meruru */ = {
+			isa = PBXGroup;
+			children = (
+				4C01F62423670B9400F20063 /* AppDelegate.swift */,
+				4C01F63423670BFF00F20063 /* ViewController */,
+				4C01F63923670C6A00F20063 /* Common */,
+				4C01F64023670C7C00F20063 /* Resources */,
+			);
+			path = Meruru;
+			sourceTree = "<group>";
+		};
+		4C01F63423670BFF00F20063 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C010B6923670D6500476E9F /* TVViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4C01F63923670C6A00F20063 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4C01F63A23670C6A00F20063 /* Extension.swift */,
+				4C01F63B23670C6A00F20063 /* MirakurunAPI.swift */,
+				4C01F63C23670C6A00F20063 /* AppConfig.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4C01F64023670C7C00F20063 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C01F62D23670B9500F20063 /* Info.plist */,
+				4C01F64623670D3200F20063 /* Main.storyboard */,
+				4C01F62823670B9500F20063 /* Assets.xcassets */,
+				4C01F62E23670B9500F20063 /* Meruru.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB0EB0E32FCCAB71462000E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7E425E17C12A8AAFE4F202A /* Pods-Meruru.debug.xcconfig */,
+				60674800432DE85C135E9A4D /* Pods-Meruru.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C01F62023670B9400F20063 /* Meruru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C01F63123670B9500F20063 /* Build configuration list for PBXNativeTarget "Meruru" */;
+			buildPhases = (
+				CA63D2F938E3C442AAC0C64E /* [CP] Check Pods Manifest.lock */,
+				4C01F61D23670B9400F20063 /* Sources */,
+				4C01F61E23670B9400F20063 /* Frameworks */,
+				4C01F61F23670B9400F20063 /* Resources */,
+				DD55E7ABF271FA7811D229C3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meruru;
+			productName = Meruru;
+			productReference = 4C01F62123670B9400F20063 /* Meruru.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C01F61923670B9400F20063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = subdiox;
+				TargetAttributes = {
+					4C01F62023670B9400F20063 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 4C01F61C23670B9400F20063 /* Build configuration list for PBXProject "Meruru" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C01F61823670B9400F20063;
+			productRefGroup = 4C01F62223670B9400F20063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C01F62023670B9400F20063 /* Meruru */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C01F61F23670B9400F20063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C01F62923670B9500F20063 /* Assets.xcassets in Resources */,
+				4C01F64823670D3200F20063 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA63D2F938E3C442AAC0C64E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meruru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD55E7ABF271FA7811D229C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meruru/Pods-Meruru-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meruru/Pods-Meruru-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meruru/Pods-Meruru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C01F61D23670B9400F20063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C010B6A23670D6500476E9F /* TVViewController.swift in Sources */,
+				4C01F63D23670C6A00F20063 /* Extension.swift in Sources */,
+				4C01F63F23670C6A00F20063 /* AppConfig.swift in Sources */,
+				4C01F63E23670C6A00F20063 /* MirakurunAPI.swift in Sources */,
+				4C01F62523670B9400F20063 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C01F64623670D3200F20063 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C01F64723670D3200F20063 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C01F62F23670B9500F20063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C01F63023670B9500F20063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4C01F63223670B9500F20063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E425E17C12A8AAFE4F202A /* Pods-Meruru.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Meruru/Meruru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Meruru/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subdiox.Meruru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4C01F63323670B9500F20063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60674800432DE85C135E9A4D /* Pods-Meruru.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Meruru/Meruru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Meruru/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subdiox.Meruru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C01F61C23670B9400F20063 /* Build configuration list for PBXProject "Meruru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C01F62F23670B9500F20063 /* Debug */,
+				4C01F63023670B9500F20063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C01F63123670B9500F20063 /* Build configuration list for PBXNativeTarget "Meruru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C01F63223670B9500F20063 /* Debug */,
+				4C01F63323670B9500F20063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C01F61923670B9400F20063 /* Project object */;
+}
