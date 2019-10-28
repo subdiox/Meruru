@@ -71,7 +71,7 @@ class TVViewController: NSViewController {
         let selectedService = services.filter{$0.channel.type == channelTypes[currentChannelTypeIndex]}[currentServiceIndex]
         debugPrint(selectedService)
         mirakurun.fetchPrograms(service: selectedService).then { programs in
-            guard let program = self.getNowProgram(programs: programs) else {
+            guard let program = self.getCurrentProgram(programs: programs) else {
                 return
             }
             DispatchQueue.main.async {
@@ -106,7 +106,7 @@ class TVViewController: NSViewController {
         return nil
     }
     
-    func getNowProgram(programs: [Program]) -> Program? {
+    func getCurrentProgram(programs: [Program]) -> Program? {
         let now = Int64(Date().timeIntervalSince1970 * 1000)
         return programs.first { $0.startAt...($0.startAt + $0.duration) ~= now }
     }
