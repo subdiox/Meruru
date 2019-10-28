@@ -708,7 +708,52 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="OZI-7x-zWk" customClass="VLCVideoView">
+                                <rect key="frame" x="0.0" y="29" width="480" height="241"/>
+                            </customView>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jxp-vb-2le">
+                                <rect key="frame" x="2" y="1" width="111" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yVP-Up-aLV"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="No Services" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Ccg-Qg-vr3" id="TVP-LQ-yeq">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="USS-QK-lrY">
+                                        <items>
+                                            <menuItem title="No Services" state="on" id="Ccg-Qg-vr3"/>
+                                            <menuItem title="Item 2" id="4pB-Ly-RQ3"/>
+                                            <menuItem title="Item 3" id="IDs-dz-A6u"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0UL-2D-IuP">
+                                <rect key="frame" x="326" y="7" width="152" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Mirakurun: connecting..." id="KYD-PX-KvN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jxp-vb-2le" secondAttribute="bottom" constant="4" id="1oX-sc-3cm"/>
+                            <constraint firstItem="OZI-7x-zWk" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="5Ii-1t-HG4"/>
+                            <constraint firstItem="OZI-7x-zWk" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="A04-dU-dRf"/>
+                            <constraint firstAttribute="trailing" secondItem="0UL-2D-IuP" secondAttribute="trailing" constant="4" id="F2X-st-ko9"/>
+                            <constraint firstAttribute="trailing" secondItem="OZI-7x-zWk" secondAttribute="trailing" id="MFA-Oa-n6j"/>
+                            <constraint firstItem="Jxp-vb-2le" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="4" id="hUh-2d-ijP"/>
+                            <constraint firstItem="0UL-2D-IuP" firstAttribute="centerY" secondItem="Jxp-vb-2le" secondAttribute="centerY" id="oDB-QA-KW7"/>
+                            <constraint firstItem="Jxp-vb-2le" firstAttribute="top" secondItem="OZI-7x-zWk" secondAttribute="bottom" constant="4" id="y7L-HD-cQf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="servicesPopUpButton" destination="Jxp-vb-2le" id="4bh-63-6E2"/>
+                        <outlet property="statusTextField" destination="0UL-2D-IuP" id="aWA-Gq-zBj"/>
+                        <outlet property="videoView" destination="OZI-7x-zWk" id="n5z-Kx-mCd"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

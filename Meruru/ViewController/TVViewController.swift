@@ -9,42 +9,29 @@
 import Cocoa
 import VLCKit
 
-class TVViewController: NSViewController, NSComboBoxDelegate {
+class TVViewController: NSViewController {
     
     var mirakurun: MirakurunAPI!
     
-    var statusTextField: NSTextField!
-    var servicesComboBox: NSComboBox!
+    @IBOutlet var servicesPopUpButton: NSPopUpButton!
+    @IBOutlet var videoView: VLCVideoView!
+    @IBOutlet var statusTextField: NSTextField!
     
     var player: VLCMediaPlayer!
     var services: [Service] = []
     var currentService: Service?
     
     override func viewDidLoad() {
-        statusTextField = NSTextField(frame: NSRect(x: 250, y: 0, width: 200, height: 24))
-        statusTextField.drawsBackground = false
-        statusTextField.isBordered = false
-        statusTextField.isEditable = false
-        statusTextField.stringValue = "Mirakurun: connecting..."
-        view.addSubview(statusTextField)
-        
-        servicesComboBox = NSComboBox(frame: NSRect(x: 0, y: 0, width: 200, height: 24))
-        servicesComboBox.delegate = self
-        view.addSubview(servicesComboBox)
-        
-        let videoView = VLCVideoView(frame: NSRect(x: 0, y: 24, width: view.frame.width, height: view.frame.height - 24))
-        videoView.autoresizingMask = [.width, .height]
-        videoView.fillScreen = true
-        videoView.backColor = NSColor.red
-        view.addSubview(videoView)
-        
-        player = VLCMediaPlayer(videoView: videoView)
+        servicesPopUpButton.removeAllItems()
+        servicesPopUpButton.action = #selector(servicesPopUpButtonDidSelect)
         
         guard let mirakurunPath = AppConfig.shared.currentData?.mirakurunPath ?? promptMirakurunPath() else {
             showErrorAndQuit(error: NSError(domain: "invalid mirakurun path", code: 0))
             return
         }
-
+        
+        player = VLCMediaPlayer(videoView: videoView)
+        
         mirakurun = MirakurunAPI(baseURL: URL(string: mirakurunPath + "/api")!)
         mirakurun.fetchStatus().then { status in
             AppConfig.shared.currentData?.mirakurunPath = mirakurunPath
@@ -54,8 +41,8 @@ class TVViewController: NSViewController, NSComboBoxDelegate {
             self.mirakurun.fetchServices().then { services in
                 self.services = services
                 DispatchQueue.main.async {
-                    self.servicesComboBox.addItems(withObjectValues: services.map { $0.name })
-                    self.servicesComboBox.selectItem(at: 0)
+                    self.servicesPopUpButton.addItems(withTitles: services.map { $0.name })
+                    self.servicesPopUpButton.selectItem(at: 0)
                 }
             }.onError { error in
                 self.showErrorAndQuit(error: error)
@@ -64,6 +51,26 @@ class TVViewController: NSViewController, NSComboBoxDelegate {
             debugPrint(error)
             self.showErrorAndQuit(error: NSError(domain: "failed to get Mirakurun's status (mirakurunPath: \(mirakurunPath))", code: 0))
         }
+    }
+    
+    @objc func servicesPopUpButtonDidSelect(sender: NSPopUpButton) {
+        let selectedService = services[sender.indexOfSelectedItem]
+        debugPrint(selectedService)
+        currentService = selectedService
+        mirakurun.fetchPrograms(service: selectedService).then { programs in
+            guard let program = self.getNowProgram(programs: programs) else {
+                return
+            }
+            DispatchQueue.main.async {
+                self.view.window?.title = "Meruru - \(program.name) - \(selectedService.name)"
+            }
+        }.onError { error in
+            print(error)
+        }
+        player.stop()
+        let media = VLCMedia(url: mirakurun.getStreamURL(service: selectedService))
+        player.media = media
+        player.play()
     }
     
     func showErrorAndQuit(error: Error) {
@@ -84,26 +91,6 @@ class TVViewController: NSViewController, NSComboBoxDelegate {
             return tf.stringValue
         }
         return nil
-    }
-    
-    func comboBoxSelectionDidChange(_ notification: Notification) {
-        let selectedService = services[servicesComboBox.indexOfSelectedItem]
-        debugPrint(selectedService)
-        currentService = selectedService
-        mirakurun.fetchPrograms(service: selectedService).then { programs in
-            guard let program = self.getNowProgram(programs: programs) else {
-                return
-            }
-            DispatchQueue.main.async {
-                self.view.window?.title = "Meruru - \(program.name) - \(selectedService.name)"
-            }
-        }.onError { error in
-            print(error)
-        }
-        player.stop()
-        let media = VLCMedia(url: mirakurun.getStreamURL(service: selectedService))
-        player.media = media
-        player.play()
     }
     
     func getNowProgram(programs: [Program]) -> Program? {
