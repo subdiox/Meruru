@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = VLCKit;
+			productName = VLCKit;
 		};
 /* End PBXAggregateTarget section */
 
@@ -130,7 +131,7 @@
 		013D1A5CE5F60F5CA342DD23832614E6 /* Promise+Race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Race.swift"; path = "Source/Promise+Race.swift"; sourceTree = "<group>"; };
 		0511FC031991525EB40C2E32C589AE76 /* VLCMediaListPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VLCMediaListPlayer.h; path = VLCKit.framework/Versions/A/Headers/VLCMediaListPlayer.h; sourceTree = "<group>"; };
 		0584F22878A8E5CE90BC3CA3C31948EB /* Promise+Aliases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Aliases.swift"; path = "Source/Promise+Aliases.swift"; sourceTree = "<group>"; };
-		089A527C934A20B02B8F27C709E2656F /* Then.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Then.framework; path = thenPromise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		089A527C934A20B02B8F27C709E2656F /* Then.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Then.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A730D8751F037A28D989F361B5BD5BE /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		0BB1A8AB38DEEB94E3AD3BDF73CF970C /* PromiseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseError.swift; path = Source/PromiseError.swift; sourceTree = "<group>"; };
 		0E86B37B0033B7697450B9EE41B25477 /* VLCMediaLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VLCMediaLibrary.h; path = VLCKit.framework/Versions/A/Headers/VLCMediaLibrary.h; sourceTree = "<group>"; };
@@ -165,7 +166,7 @@
 		5A8B28E628B27343CC7B3C3A0C27E39A /* VLCTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VLCTime.h; path = VLCKit.framework/Versions/A/Headers/VLCTime.h; sourceTree = "<group>"; };
 		5A9735926347AE4E9F3C263EF0C4A30F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		5C62B65D1E5DC8FA489E2BEA21CA0DB2 /* PromiseState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseState.swift; path = Source/PromiseState.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFC5116ABA0597E454C363F09B6199D /* VLCMediaPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VLCMediaPlayer.h; path = VLCKit.framework/Versions/A/Headers/VLCMediaPlayer.h; sourceTree = "<group>"; };
 		6091676ABED7467E0784280886CD7966 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		630B4B6F5DD4D7E5660C468E22B64A04 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
@@ -195,7 +196,7 @@
 		99D93ECFE2DE3DF37869E086CD17A547 /* VoidPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoidPromise.swift; path = Source/VoidPromise.swift; sourceTree = "<group>"; };
 		9C3B5D5CFEACFCB8576E31C70EB76DBD /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		9D519FFF0084DE4CB7232CCF982FE9DF /* Promise+Finally.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Finally.swift"; path = "Source/Promise+Finally.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2C530CDDFFB0745EB8F66B87D25A128 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Source/Async.swift; sourceTree = "<group>"; };
 		A2F090BCED9B5097B7AFF9AF95F27F01 /* thenPromise-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "thenPromise-prefix.pch"; sourceTree = "<group>"; };
 		A3197357B86EE1C2E1760630BF36A1DC /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -211,7 +212,7 @@
 		BD7AB096FFF2B42322C68D5618BC5B8B /* Pods-Meruru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meruru.release.xcconfig"; sourceTree = "<group>"; };
 		BF9F7C737CFC4429BB51176787D53FA8 /* thenPromise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = thenPromise.xcconfig; sourceTree = "<group>"; };
 		BFFD562CDF94387B47064CEDADB49D48 /* thenPromise-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "thenPromise-Info.plist"; sourceTree = "<group>"; };
-		C3EA8A6211E64B96C88E00F005E92141 /* Pods_Meruru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Meruru.framework; path = "Pods-Meruru.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EA8A6211E64B96C88E00F005E92141 /* Pods_Meruru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meruru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65AECAD5BA587CCA62F64E3B12B869D /* VLCStreamSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VLCStreamSession.h; path = VLCKit.framework/Versions/A/Headers/VLCStreamSession.h; sourceTree = "<group>"; };
 		C7A2869AF0967FCBF0AC351C745C70E4 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		C895CE2CB85BB4922945DEF835EFFB74 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
@@ -226,7 +227,7 @@
 		E01B6793AAC2310B1DD6C6B00488FCB2 /* Promise+Chain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Chain.swift"; path = "Source/Promise+Chain.swift"; sourceTree = "<group>"; };
 		E0CD0AEC65E9612057E65DDA9F71FB00 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		E0DCEAAD7CAEBBE9DEF56B0A9D7DA9DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26425953E35B4A58666FA99D8679F26 /* Promise+Retry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Retry.swift"; path = "Source/Promise+Retry.swift"; sourceTree = "<group>"; };
 		E307D785C28590A4976953233C59DC7D /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		E35A8CE8E5D429E0CBD1E8CA6F95E1DF /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
@@ -314,7 +315,6 @@
 				1D1008FDA4DAE2F4F44D5866C79EFBBD /* Frameworks */,
 				08D8DB53733395602ECED43E60311E9D /* Support Files */,
 			);
-			name = VLCKit;
 			path = VLCKit;
 			sourceTree = "<group>";
 		};
@@ -407,7 +407,6 @@
 				DC08760F5CD25AD93BF2F0AF987343EA /* WhenAll.swift */,
 				E24389B5AFF00958BBEF99EC98B2F2D8 /* Support Files */,
 			);
-			name = thenPromise;
 			path = thenPromise;
 			sourceTree = "<group>";
 		};
@@ -486,7 +485,6 @@
 				A3197357B86EE1C2E1760630BF36A1DC /* SwiftyJSON.swift */,
 				6052F8CFFA8DF16F1AD0F565E6EAD28C /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -527,7 +525,6 @@
 				6D25653354992999BC8263B4F1ADFE7F /* Validation.swift */,
 				51417EFB30DC10349DEDF3C01B9F4F56 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -652,7 +649,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1110;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -895,7 +892,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF9F7C737CFC4429BB51176787D53FA8 /* thenPromise.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -933,7 +929,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5B0026C6FBE3882185B48DC8AB12797 /* VLCKit.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -951,7 +946,6 @@
 			baseConfigurationReference = 96C67AC8C99CFD7B720E9F0FEE09F42C /* Pods-Meruru.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -990,7 +984,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5B0026C6FBE3882185B48DC8AB12797 /* VLCKit.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1007,7 +1000,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF9F7C737CFC4429BB51176787D53FA8 /* thenPromise.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1045,7 +1037,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0CD0AEC65E9612057E65DDA9F71FB00 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1146,7 +1137,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44D43910898BBAC12BC6FC8918877B35 /* Alamofire.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1184,7 +1174,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44D43910898BBAC12BC6FC8918877B35 /* Alamofire.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1223,7 +1212,6 @@
 			baseConfigurationReference = BD7AB096FFF2B42322C68D5618BC5B8B /* Pods-Meruru.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1262,7 +1250,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0CD0AEC65E9612057E65DDA9F71FB00 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

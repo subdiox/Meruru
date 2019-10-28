@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				4C01F63A23670C6A00F20063 /* Extension.swift */,
-				4C01F63B23670C6A00F20063 /* MirakurunAPI.swift */,
 				4C01F63C23670C6A00F20063 /* AppConfig.swift */,
+				4C01F63B23670C6A00F20063 /* MirakurunAPI.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -374,7 +374,8 @@
 			baseConfigurationReference = E7E425E17C12A8AAFE4F202A /* Pods-Meruru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Meruru/Meruru.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Meruru/Resources/Meruru.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Meruru/Resources/Info.plist";
@@ -393,7 +394,8 @@
 			baseConfigurationReference = 60674800432DE85C135E9A4D /* Pods-Meruru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Meruru/Meruru.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Meruru/Resources/Meruru.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Meruru/Resources/Info.plist";

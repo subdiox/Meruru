@@ -65,9 +65,9 @@ public class MirakurunAPI {
         return Promise<[Program]> { resolve, reject in
             AF.request(url, parameters: params, encoding: URLEncoding.default)
                 .validate(statusCode: 200..<300)
-                .responseDecodable(of: [Program].self) { response in
+                .responseDecodable { response in
                     self.process(response: response, resolve: resolve, reject: reject)
-            }
+                }
         }
         
     }
@@ -75,18 +75,22 @@ public class MirakurunAPI {
     public func fetchStatus() -> Promise<Status> {
         let url = baseURL.appendingPathComponent("status")
         return Promise<Status> { resolve, reject in
-            AF.request(url).responseDecodable { response in
-                self.process(response: response, resolve: resolve, reject: reject)
-            }
+            AF.request(url)
+                .validate(statusCode: 200..<300)
+                .responseDecodable { response in
+                    self.process(response: response, resolve: resolve, reject: reject)
+                }
         }
     }
     
     public func fetchServices() -> Promise<[Service]> {
         let url = baseURL.appendingPathComponent("services")
         return Promise<[Service]> { resolve, reject in
-            AF.request(url).responseDecodable { response in
-                self.process(response: response, resolve: resolve, reject: reject)
-            }
+            AF.request(url)
+                .validate(statusCode: 200..<300)
+                .responseDecodable { response in
+                    self.process(response: response, resolve: resolve, reject: reject)
+                }
         }
     }
 }

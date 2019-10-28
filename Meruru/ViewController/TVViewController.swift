@@ -13,22 +13,25 @@ class TVViewController: NSViewController {
     
     var mirakurun: MirakurunAPI!
     
-    @IBOutlet var servicesPopUpButton: NSPopUpButton!
     @IBOutlet var videoView: VLCVideoView!
+    @IBOutlet var channelTypePopUpButton: NSPopUpButton!
+    @IBOutlet var servicePopUpButton: NSPopUpButton!
     @IBOutlet var statusTextField: NSTextField!
     
     var player: VLCMediaPlayer!
+    var channelTypes: [String] = []
     var services: [Service] = []
-    var currentService: Service?
+    var currentChannelTypeIndex: Int = 0
+    var currentServiceIndex: Int = 0
     
     override func viewDidLoad() {
-        servicesPopUpButton.removeAllItems()
-        servicesPopUpButton.action = #selector(servicesPopUpButtonDidSelect)
-        
         guard let mirakurunPath = AppConfig.shared.currentData?.mirakurunPath ?? promptMirakurunPath() else {
             showErrorAndQuit(error: NSError(domain: "invalid mirakurun path", code: 0))
             return
         }
+        
+        channelTypePopUpButton.action = #selector(channelTypePopUpButtonDidSelect)
+        servicePopUpButton.action = #selector(servicePopUpButtonDidSelect)
         
         player = VLCMediaPlayer(videoView: videoView)
         
@@ -40,10 +43,10 @@ class TVViewController: NSViewController {
             }
             self.mirakurun.fetchServices().then { services in
                 self.services = services
-                DispatchQueue.main.async {
-                    self.servicesPopUpButton.addItems(withTitles: services.map { $0.name })
-                    self.servicesPopUpButton.selectItem(at: 0)
-                }
+                self.channelTypes = services.getChannelTypes()
+                self.channelTypePopUpButton.removeAllItems()
+                self.channelTypePopUpButton.addItems(withTitles: self.channelTypes)
+                self.channelTypePopUpButtonDidSelect(sender: self.channelTypePopUpButton)
             }.onError { error in
                 self.showErrorAndQuit(error: error)
             }
@@ -53,10 +56,20 @@ class TVViewController: NSViewController {
         }
     }
     
-    @objc func servicesPopUpButtonDidSelect(sender: NSPopUpButton) {
-        let selectedService = services[sender.indexOfSelectedItem]
+    @objc func channelTypePopUpButtonDidSelect(sender: NSPopUpButton) {
+        currentChannelTypeIndex = sender.indexOfSelectedItem
+        let serviceNames = services.filter{$0.channel.type == channelTypes[currentChannelTypeIndex]}.map{$0.name}
+        if serviceNames.count > 0 {
+            servicePopUpButton.removeAllItems()
+            servicePopUpButton.addItems(withTitles: serviceNames)
+            servicePopUpButtonDidSelect(sender: servicePopUpButton)
+        }
+    }
+    
+    @objc func servicePopUpButtonDidSelect(sender: NSPopUpButton) {
+        currentServiceIndex = sender.indexOfSelectedItem
+        let selectedService = services.filter{$0.channel.type == channelTypes[currentChannelTypeIndex]}[currentServiceIndex]
         debugPrint(selectedService)
-        currentService = selectedService
         mirakurun.fetchPrograms(service: selectedService).then { programs in
             guard let program = self.getNowProgram(programs: programs) else {
                 return
