@@ -7,7 +7,7 @@ target 'Meruru' do
 
   # Pods for Meruru
   pod 'VLCKit'
-  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'Alamofire'
   pod 'thenPromise'
   pod 'SwiftyJSON'
 end
