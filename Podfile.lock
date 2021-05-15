@@ -1,8 +1,8 @@
 PODS:
-  - Alamofire (5.4.1)
-  - SwiftyJSON (5.0.0)
+  - Alamofire (5.4.3)
+  - SwiftyJSON (5.0.1)
   - thenPromise (5.1.2)
-  - VLCKit (3.3.15)
+  - VLCKit (3.3.16)
 
 DEPENDENCIES:
   - Alamofire
@@ -18,11 +18,11 @@ SPEC REPOS:
     - VLCKit
 
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   thenPromise: c1a319348c6052652b071d8dd4c6db9984860209
-  VLCKit: 2b5ccb606b345dfb11e981aac961253119c2f36f
+  VLCKit: 4cf44b6c4fbc6c32a69ff2655beb79a387e20ed7
 
-PODFILE CHECKSUM: 6b90cc4dac56ab5598f5ed0e4582f40eb57a7822
+PODFILE CHECKSUM: d34bdb774d087ae2c999e0f4676b46481d777da6
 
 COCOAPODS: 1.10.0

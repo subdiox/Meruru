@@ -25,9 +25,16 @@ class TVViewController: NSViewController {
     var currentServiceIndex: Int = 0
     
     override func viewDidLoad() {
-        guard let mirakurunPath = AppConfig.shared.currentData?.mirakurunPath ?? promptMirakurunPath() else {
+        guard var mirakurunPath = AppConfig.shared.currentData?.mirakurunPath ?? promptMirakurunPath() else {
             showErrorAndQuit(error: NSError(domain: "invalid mirakurun path", code: 0))
             return
+        }
+        
+        if !mirakurunPath.starts(with: "http") {
+            mirakurunPath = "http://\(mirakurunPath)"
+        }
+        if mirakurunPath.components(separatedBy: ":").count == 2 {
+            mirakurunPath = "\(mirakurunPath):40772"
         }
         
         channelTypePopUpButton.action = #selector(channelTypePopUpButtonDidSelect)
@@ -38,6 +45,7 @@ class TVViewController: NSViewController {
         mirakurun = MirakurunAPI(baseURL: URL(string: mirakurunPath + "/api")!)
         mirakurun.fetchStatus().then { status in
             AppConfig.shared.currentData?.mirakurunPath = mirakurunPath
+            try? AppConfig.shared.save()
             DispatchQueue.main.async {
                 self.statusTextField.stringValue = "Mirakurun: v" + status.version
             }

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		NCjCgk1w+SQZRF2dv46lDRR8XnY=
+		eCIHWFyNtfR8Ly5s3DlElL5fJC0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M3evy0vBM5EM9/ztmkjuzvXLl0w=
+			LbxGtEzP3ZVUmKB7bZ1jURFE/D8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z6yBKXXYWwPZ2n8y+zoOOqzhvLKnKUlgOys46LaG5CU=
+			q2+kvI7L5CoHoUxT8kx1MWItWDQGDCYG7a2DzAAcL9w=
 			</data>
 		</dict>
 		<key>Headers/VLCMediaThumbnailer.h</key>
@@ -235,11 +235,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			otcwoGXncYokLDxzAXgIZ5J+5yE=
+			9ky/Mwr+e2AH5ux2YcQa0woka20=
 			</data>
 			<key>hash2</key>
 			<data>
-			GGQpgkaBh9N/5fKIW50uVPQto2hwJjyG29uawiocZ0E=
+			fqAblC6jiojKXaSAixD3PRuJCcZFD5+vVmp4RoCuAYs=
 			</data>
 		</dict>
 		<key>Headers/vlc/libvlc_media.h</key>
@@ -301,11 +301,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			54lWgxJF83zfqEJhY6vwmOeir0A=
+			WdN45HTzFRP1Z9mVUxRvp5Dartw=
 			</data>
 			<key>hash2</key>
 			<data>
-			4wlYZqpctrYYRCXgKeXl7SHV17ySuMhHnVrg1VXdWDw=
+			tDcVMk9n0uPBprfJcWvL2cXWGp6rDbQNN8qP+/VJH2k=
 			</data>
 		</dict>
 		<key>Headers/vlc/libvlc_renderer_discoverer.h</key>
@@ -356,11 +356,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NCjCgk1w+SQZRF2dv46lDRR8XnY=
+			eCIHWFyNtfR8Ly5s3DlElL5fJC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			onTdi049wedYwCGiCLIwzhWn+mqYMeK/ZJjh2K6jvZk=
+			pCigIEVcDkcVvvKSL8iwL1q/A9bTnsDRxuIHc4S3jEk=
 			</data>
 		</dict>
 	</dict>

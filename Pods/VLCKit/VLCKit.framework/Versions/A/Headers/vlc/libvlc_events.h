@@ -89,6 +89,7 @@ enum libvlc_event_e {
     libvlc_MediaPlayerAudioDevice,
     libvlc_MediaPlayerChapterChanged,
     libvlc_MediaPlayerRecordChanged,
+    libvlc_MediaPlayerLoudnessChanged,
 
     libvlc_MediaListItemAdded=0x200,
     libvlc_MediaListWillAddItem,
@@ -208,6 +209,18 @@ typedef struct libvlc_event_t
         {
             int new_count;
         } media_player_vout;
+
+        struct
+        {
+            /**
+             * Absolute date of the measurement
+             *
+             * It is most likely in the future (0 to 2seconds) depending on the audio
+             * output buffer size. */
+            int64_t date;
+            /** Momentary loudness (last 400ms), in LUFS */
+            double momentary_loudness;
+        } media_player_loudness_changed;
 
         /* media list */
         struct
